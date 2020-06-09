@@ -14,3 +14,4 @@ go in the menù header in the 3D view
 open the Face menu
 Search for Extrude and Inset
 Press F9 if you don't see the options window
+https://www.youtube.com/embed/HwDew0fwJeo
