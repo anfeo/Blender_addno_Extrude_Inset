@@ -1,8 +1,8 @@
 bl_info = {
     "name": "Extrude and Inset",
     "author": "Alfonso Annarumam",
-    "version": (0, 1),
-    "blender": (2, 80, 0),
+    "version": (0, 2),
+    "blender": (4, 0, 0),
     "location": "View3D > Menu -> Face",
     "description": "Inset and Extrude with more option ",
     "warning": "",
@@ -51,7 +51,7 @@ def main(context,thickness,extrude,loop,thick_loop):
             #print(geom)
     # Show the updates in the viewport
     # and recalculate n-gon tessellation.
-    bmesh.update_edit_mesh(me, True)
+    bmesh.update_edit_mesh(me, loop_triangles=True, destructive=True)
 
 
 class Mesh_OT_Extrude_Inset(bpy.types.Operator):
